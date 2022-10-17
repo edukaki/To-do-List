@@ -1,3 +1,12 @@
+
+body{
+
+    font-family: var(--font-family--main);
+    font-weight: var(--font-weight--normal);
+    font-size: var(--font-size--main);
+
+    background-color: var(--very-light-gray);
+}
 .container{
     padding: 0 20px;
 }
