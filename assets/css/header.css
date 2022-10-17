@@ -1,5 +1,8 @@
 .l-header{
     position: absolute;
+
+    /* TIPOGRAPHY */
+    color: var(--white);
     
     /* SIZE */
     height: 30vh;
@@ -10,12 +13,14 @@
     background-repeat: no-repeat;
     background-size: 100vw;
     mix-blend-mode: normal;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .l-header__title{
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    letter-spacing: .7rem;
+    margin-top: 50px;
+    text-transform: uppercase;
 }
