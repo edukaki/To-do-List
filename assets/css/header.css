@@ -1,0 +1,21 @@
+.l-header{
+    position: absolute;
+    
+    /* SIZE */
+    height: 30vh;
+    width: 100vw;
+    
+    /* BACKGROUND */
+    background: url(../images/bg-mobile-light.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.l-header__title{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
