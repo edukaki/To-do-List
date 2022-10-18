@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reseter.css/2.0.0/reseter.min.css"> <!-- reset css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> <!--Font awesome-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -13,6 +14,7 @@
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="./assets/css/header.css">
   <link rel="stylesheet" href="./assets/css/components/new-item.css">
+  <link rel="stylesheet" href="./assets/css/components/filter-element.css">
   
   <title>Frontend Mentor | Todo app</title>
 </head>
@@ -23,23 +25,28 @@
   </header>
 
 <main class="l-main container">
+  <!-- NEW TO-DO COMPONENT START -->
   <form action="" class="c-to-do__container">
-    <!-- NEW TO-DO COMPONENT START -->
     <label class="c-checkbox__container">
       <!-- <input type="checkbox" class="checkbox--hide"> -->
       <span class="checkmark"></span>
     </label>
-    <!-- NEW TO-DO COMPONENT END -->
     <input type="text" placeholder="Create a new to do..." class="c-to-do__text">
+    <button class="button--bgTransparent"><i class="fa-thin fa-plus button--plusIcon"></i></button>
   </form>
+  <!-- NEW TO-DO COMPONENT END -->
+
+  <!-- FILTER ELEMENT -->
+  <ul class="c-to-do__container c-to-do__filter">
+    <li><button class="button--bgTransparent c-to-do__filter__text active">All</button></li>
+    <li><button class="button--bgTransparent c-to-do__filter__text inactive">Active</button></li>
+    <li><button class="button--bgTransparent c-to-do__filter__text inactive">Completed</button></li>
+  </ul>
 
 </main>
 
   <!-- Add dynamic number items left
 
-  All
-  Active 
-  Completed
 
   Clear Completed
 
