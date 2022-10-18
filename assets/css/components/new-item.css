@@ -17,3 +17,41 @@
     background-color: transparent;
     border: none;
 }
+
+/* Custom checkbox container */
+.c-checkbox__container {
+
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    
+    cursor: pointer;
+    position: relative;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox--hide {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.c-checkbox__container .checkmark {
+    height: 25px;
+    width: 25px;
+    
+    background-color: var(--very-light-gray);
+    
+    border-radius: 50%;
+}
+
+/* When the checkbox is checked, show the checkmark with the gradient background */
+.c-checkbox__container input:checked ~ .checkmark {
+    background: var(--checkbox-background);
+    background-position: center;
+    background-repeat: no-repeat;
+}

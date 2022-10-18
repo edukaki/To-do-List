@@ -4,7 +4,7 @@
     /* PRIMARY */
 
     --bright-blue: hsl(220, 98%, 61%);
-    --checkbox-background: linear-gradient(hsl(192deg, 100%, 67%),hsl(280deg, 87%, 65%));
+    --checkbox-background: url(../../images/icon-check.svg), linear-gradient(#57ddff, #c058f3);
     --very-light-gray: #F2F2F2;
     --white: #FFFFFF;
 
