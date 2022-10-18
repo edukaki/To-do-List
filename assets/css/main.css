@@ -24,6 +24,10 @@ body{
     align-items: center;
 }
 
+.l-main{
+    width: 100vw;
+}
+
 .container{
     padding: 0 20px;
 }
