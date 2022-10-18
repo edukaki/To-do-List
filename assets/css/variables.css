@@ -5,16 +5,24 @@
 
     --bright-blue: hsl(220, 98%, 61%);
     --checkbox-background: linear-gradient(hsl(192deg, 100%, 67%),hsl(280deg, 87%, 65%));
-    
+    --very-light-gray: #F2F2F2;
+    --white: #FFFFFF;
+
+    /* IMAGE */
+    --bg-mobile-light: url(../images/bg-mobile-light.jpg);
+
     /* TYPOGRAPHY */
 
     /* FONT FAMILY */
-    --main-font-family: 'Josefin Sans', sans-serif;
+    --font-family--main: 'Josefin Sans', sans-serif;
 
     /* FONT SIZE */
-    --general-font-size: 18px;
+    --font-size--main: 18px;
 
     /* FONT WEIGHT */
-    --normal-font-weight: 400;
-    --strong-font-weight:700;
+    --font-weight--normal: 400;
+    --font-weight--strong:700;
+
+    /* ITEM CONTAINER */
+    --box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
 }
