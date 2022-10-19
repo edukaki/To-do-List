@@ -7,7 +7,6 @@ export class ToDoItem {
 
     constructor(text){
         this.text = text;
-        console.log(toDoListArr.length)
         toDoListArr.length===0 ? this.id = 1 : this.id = toDoListArr.length+1;
     }
 }
@@ -19,14 +18,18 @@ window.addEventListener("click",event => {
     
     btnCross.forEach(btnCross => {
         if(btnCross == target){
-            toDoListArr.splice(toDoListArr.findIndex(element => element.id == btnCross.dataset.crossid),1)
-            console.log(btnCross)
-            return deleteItem((btnCross.parentNode).parentNode);
+            return deleteItem((btnCross.parentNode).parentNode,toDoListArr.findIndex(element => element.id == btnCross.dataset.crossid));
         }
     })
-
+    
 })
 
-function deleteItem(element){
+function deleteItem(element,arrIndex){
+    toDoListArr.splice(arrIndex,1)
+    console.log(toDoListArr)
     return element.remove();
+}
+
+function overlineItem(element){
+
 }

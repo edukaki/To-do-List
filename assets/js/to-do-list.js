@@ -17,7 +17,7 @@ function createNewItem(element){
     toDoList.appendChild(newLi);
     newLi.innerHTML = `
             <label class="c-checkbox__container">
-                <input type="checkbox" class="checkbox--hide">
+                <input type="checkbox" class="checkbox--hide" data-checkid=${element.id}>
                 <span class="checkmark"></span>
             </label>
             <p class="c-to-do__text">${element.text}</p>
