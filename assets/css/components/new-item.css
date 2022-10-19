@@ -1,20 +1,29 @@
 .c-to-do__container{
     align-items: center;
     display: flex;
-    /* padding-left: 15px; */
-    justify-content: space-evenly;
     width: 100%;
-
+    
     background-color: var(--white);
     border-radius: 5px;
     box-shadow: var(--box-shadow);
     padding: 1rem;
+    margin-bottom: .15rem;
+}
+
+.c-to-do__container--spaceEvenly{
+    justify-content: space-evenly;
+}
+
+.c-to-do__container--spaceBetween{
+    justify-content: space-between;
 }
 
 .c-to-do__text{
+    display: flex;
+    align-items: center;
     min-height: 25px;
-    min-width: 200px;
-    margin: 0 10px;
+    width: 100%;
+    padding: 0 1rem;
 
     background-color: transparent;
     border: none;

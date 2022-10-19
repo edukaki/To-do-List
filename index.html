@@ -26,18 +26,18 @@
 
 <main class="l-main container">
   <!-- NEW TO-DO COMPONENT START -->
-  <form action="" class="c-to-do__container">
+  <form action="" class="c-to-do__container c-to-do__container--spaceEvenly" data-form="to-do__form">
     <label class="c-checkbox__container">
       <!-- <input type="checkbox" class="checkbox--hide"> -->
       <span class="checkmark"></span>
     </label>
-    <input type="text" placeholder="Create a new to do..." class="c-to-do__text">
-    <button class="button--bgTransparent"><i class="fa-thin fa-plus button--plusIcon"></i></button>
+    <input type="text" placeholder="Create a new to do..." class="c-to-do__text" name="toDoInput">
+    <button class="button--bgTransparent" name="btn_add"><i class="fa-thin fa-plus button--plusIcon"></i></button>
   </form>
   <!-- NEW TO-DO COMPONENT END -->
-
+<ul data-list="body"></ul>
   <!-- FILTER ELEMENT -->
-  <ul class="c-to-do__container c-to-do__filter">
+  <ul class="c-to-do__container c-to-do__container--spaceEvenly c-to-do__filter">
     <li><button class="button--bgTransparent c-to-do__filter__text active">All</button></li>
     <li><button class="button--bgTransparent c-to-do__filter__text inactive">Active</button></li>
     <li><button class="button--bgTransparent c-to-do__filter__text inactive">Completed</button></li>
@@ -56,5 +56,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Arakaki Eduardo</a>.
   </div> -->
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/to-do-list.js"></script>
 </body>
 </html>
