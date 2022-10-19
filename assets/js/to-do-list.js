@@ -1,17 +1,6 @@
+import { ToDoItem, toDoListArr, toDoList } from "./main.js";
+
 const toDoForm = document.querySelector('[data-form="to-do__form"]');
-const toDoList = document.querySelector('[data-list="body"]');
-const toDoListArr = [];
-
-class ToDoItem {
-    id = 0;
-    checked = false;
-    text = "";
-
-    constructor(text){
-        this.text = text;
-        this.id++;
-    }
-}
 
 toDoForm.addEventListener("submit", event => {
     event.preventDefault();
