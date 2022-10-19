@@ -8,8 +8,6 @@ toDoForm.addEventListener("submit", event => {
     const newToDo = new ToDoItem(toDoForm.toDoInput.value);
     toDoListArr.push(newToDo)
     createNewItem(newToDo);
-    console.log(toDoListArr);
-
 })
 
 function createNewItem(element){
