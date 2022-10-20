@@ -18,18 +18,16 @@ window.addEventListener("click",event => {
     
     btnCross.forEach(btnCross => {
         if(btnCross == target){
-            return deleteItem((btnCross.parentNode).parentNode,toDoListArr.findIndex(element => element.id == btnCross.dataset.crossid));
+            return deleteItem((btnCross.parentNode).parentNode,getIdFromArr(btnCross.dataset.crossid));
         }
-    })
-    
+    })  
 })
+
+function getIdFromArr (data){
+    return toDoListArr.findIndex(element => element.id == data);
+}
 
 function deleteItem(element,arrIndex){
     toDoListArr.splice(arrIndex,1)
-    console.log(toDoListArr)
     return element.remove();
-}
-
-function overlineItem(element){
-
 }
