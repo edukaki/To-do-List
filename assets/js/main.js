@@ -29,6 +29,9 @@ window.addEventListener("click",event => {
             return lineThroughItem(checkBox,getIdFromArr(checkBox.dataset.checkid),text);
         }
     })
+
+    filter();
+    
 })
 
 function getIdFromArr (data){
