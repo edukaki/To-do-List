@@ -48,3 +48,7 @@ body{
 .inactive{
     color: var(--dark-gray);
 }
+
+.line-through{
+    text-decoration: line-through;
+}

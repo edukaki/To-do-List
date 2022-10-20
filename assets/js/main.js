@@ -14,13 +14,21 @@ export class ToDoItem {
 
 window.addEventListener("click",event => {
     const btnCross = document.querySelectorAll('[data-crossid]');
+    const checkBox = document.querySelectorAll('[data-checkid]');
     const target = event.target;
     
     btnCross.forEach(btnCross => {
         if(btnCross == target){
             return deleteItem((btnCross.parentNode).parentNode,getIdFromArr(btnCross.dataset.crossid));
         }
-    })  
+    })
+    
+    checkBox.forEach(checkBox => {
+        const text = checkBox.parentNode.nextSibling.nextSibling;
+        if(checkBox == target){
+            return lineThroughItem(checkBox,getIdFromArr(checkBox.dataset.checkid),text);
+        }
+    })
 })
 
 function getIdFromArr (data){
@@ -30,4 +38,13 @@ function getIdFromArr (data){
 function deleteItem(element,arrIndex){
     toDoListArr.splice(arrIndex,1)
     return element.remove();
+}
+
+function lineThroughItem(checkBox, checkBoxId, element){
+    if(checkBox.checked == true) {
+        element.classList.add("line-through");
+        toDoListArr[checkBoxId].checked = true;
+    }else{
+        element.classList.remove("line-through")
+    }
 }
