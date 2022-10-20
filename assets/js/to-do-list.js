@@ -6,8 +6,9 @@ toDoForm.addEventListener("submit", event => {
     event.preventDefault();
     
     const newToDo = new ToDoItem(toDoForm.toDoInput.value);
-    toDoListArr.push(newToDo)
+    toDoListArr.push(newToDo);
     createNewItem(newToDo);
+    toDoForm.reset();
 })
 
 function createNewItem(element){
@@ -17,7 +18,7 @@ function createNewItem(element){
     if (element.checked==true){isChecked = "checked"};
 
     newLi.classList.add("c-to-do__container","c-to-do__container--spaceBetween");
-    newLi.setAttribute("data-listid",element.id)
+    newLi.setAttribute("data-listid",element.id);
     toDoList.appendChild(newLi);
     newLi.innerHTML = `
             <label class="c-checkbox__container">
@@ -29,6 +30,6 @@ function createNewItem(element){
             `;
 
     if(newLi.querySelector("[data-checkid]").checked===true){
-        newLi.querySelector("p").classList.add("line-through")
+        newLi.querySelector("p").classList.add("line-through");
     }
 }
