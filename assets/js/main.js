@@ -32,7 +32,10 @@ window.addEventListener("click",event => {
 
     filter();
 
+    toDoCount(toDoListArr);
 })
+
+toDoCount(toDoListArr);
 
 function getIdFromArr (data){
     return toDoListArr.findIndex(element => element.id == data);
@@ -49,5 +52,18 @@ function lineThroughItem(checkBox, checkBoxId, element){
         toDoListArr[checkBoxId].checked = true;
     }else{
         element.classList.remove("line-through")
+        toDoListArr[checkBoxId].checked = false;
     }
+}
+
+export function toDoCount (Arr){
+    let countArr = 0;
+    const count = document.querySelector("[data-count]");
+
+    toDoListArr.forEach((element) => {
+        if(element.checked == false){
+            return countArr++
+        }
+    })
+    count.innerHTML=`${countArr} items left`
 }
