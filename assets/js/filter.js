@@ -1,6 +1,7 @@
 const btnAll = document.querySelector('[data-filter="all"]');
 const btnActive = document.querySelector('[data-filter="active"]');
 const btnCompleted = document.querySelector('[data-filter="completed"]');
+const btnClearCompleted = document.querySelector('[data-filter="clear"]');
 
 
 function filter(){
@@ -19,63 +20,34 @@ function filter(){
         })
         
         checkedElement.forEach(checkedElement => {
-            if(checkedElement.checked){hideElement(checkedElement.parentNode.parentNode)}           
-        })   
-    })  
-
+            if(checkedElement.checked){hideElement(checkedElement.parentNode.parentNode)}
+        })
+    }) 
+    
     btnCompleted.addEventListener("click", () => {
         listElement.forEach(element => {
             showElement(element);
         })
-
+        
         checkedElement.forEach(checkedElement => {
             if(!checkedElement.checked){hideElement(checkedElement.parentNode.parentNode)}
+        })
+    })
+
+    btnClearCompleted.addEventListener("click", () => {
+        checkedElement.forEach(checkedElement => {
+            if(checkedElement.checked){
+                checkedElement.parentNode.parentNode.remove();
+            }
         })
     })
 } 
 
 
 function hideElement(element){
-    element.style.webkitTransitionDuration = "1s";
-    element.style.mozTransitionDuration = "1s";
-    element.style.oTransitionDuration = "1s";
-    element.style.transitionDuration = "1s";
-    element.style.opacity = "0";
-    
-    element.addEventListener('webkitTransitionEnd', function () {
-        element.style.display = "none";
-    }, false);
-    element.addEventListener('mozTransitionEnd', function () {
-        element.style.display = "none";
-    }, false);
-    element.addEventListener('oTransitionEnd', function () {
-        element.style.display = "none";
-    }, false);
-    element.addEventListener('transitionend', function () {
-        element.style.display = "none";
-    }, false);
+    element.style.display = "none";
 }
 
 function showElement(element){
-    element.style.webkitTransitionDuration = "1s";
-    element.style.mozTransitionDuration = "1s";
-    element.style.oTransitionDuration = "1s";
-    element.style.transitionDuration = "1s";
-    element.style.opacity = "1";
-    
-    element.addEventListener('webkitTransitionEnd', function () {
-        element.style.display = "flex";
-    }, false);
-    element.addEventListener('mozTransitionEnd', function () {
-        element.style.display = "flex";
-    }, false);
-    element.addEventListener('oTransitionEnd', function () {
-        element.style.display = "flex";
-    }, false);
-    element.addEventListener('transitionend', function () {
-        element.style.display = "flex";
-    }, false);
     element.style.display = "flex";
-
-    console.log(element)
 }
