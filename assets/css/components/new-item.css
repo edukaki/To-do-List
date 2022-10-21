@@ -3,11 +3,12 @@
     display: flex;
     width: 100%;
     
-    background-color: var(--white);
+    background-color: var(--list-background-light);
     border-radius: 5px;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--shadow-color-light);
     padding: 1rem;
     margin-bottom: .15rem;
+    transition: var(--transition);
 }
 
 .c-to-do__container--spaceEvenly{

@@ -7,25 +7,43 @@
     --checkbox-background: url(../../images/icon-check.svg), linear-gradient(#57ddff, #c058f3);
     --dark-gray: #9495A5;
     --very-light-gray: #F2F2F2;
-    --very-dark-gray: #484b6a;
-    --white: #FFFFFF;
-
+    --very-dark-gray: #161722;
+    --list-background-dark: #25273c;;
+    --font-color-white: #FFFFFF;
+    
     /* IMAGE */
     --bg-mobile-light: url(../images/bg-mobile-light.jpg);
     --bg-mobile-dark: url(../images/bg-mobile-dark.jpg);
-
+    --icon-moon: url(../images/icon-moon.svg);
+    --icon-sun: url(../images/icon-sun.svg);
+    
     /* TYPOGRAPHY */
-
+    
     /* FONT FAMILY */
     --font-family--main: 'Josefin Sans', sans-serif;
-
+    
     /* FONT SIZE */
     --font-size--main: 18px;
-
+    
     /* FONT WEIGHT */
     --font-weight--normal: 400;
     --font-weight--strong:700;
-
+    
     /* ITEM CONTAINER */
-    --box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+    --list-background-light : #FFFFFF;
+    --list-fontcolor-dark: #C8CBE7;
+    --shadow-color-dark: 0px 35px 50px -15px #121212e0;
+    --shadow-color-light: 0px 35px 50px -15px #d7d7db9a;
+
+    /* TRANSITION */
+    --transition: .5s;
+}
+
+.body--dark-mode{
+    --bg-mobile-light: var(--bg-mobile-dark);
+    --very-light-gray: var(--very-dark-gray);
+    --icon-moon: var(--icon-sun);
+    --list-background-light: var(--list-background-dark);
+    --shadow-color-light: var(--shadow-color-dark);
+    color: var(--list-fontcolor-dark);
 }

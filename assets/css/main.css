@@ -20,18 +20,12 @@ body{
     background-position: top left;
     background-size: contain;
     min-height: 100vh;
-
-    background-color: var(--very-light-gray);
+    transition: var(--transition);
 
     /* POSITION */
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.body--dark-mode{
-    background-image: var(--bg-mobile-dark);
-    background-color: var(--very-dark-gray);
 }
 
 .l-main{
@@ -59,7 +53,7 @@ body{
 }
 
 .theme{
-    background: url("../images/icon-moon.svg");
+    background: var(--icon-moon);
     background-repeat: no-repeat;
     background-position: center;
     height: 30px;
