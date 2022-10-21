@@ -15,7 +15,7 @@ body{
     
     width: 100%;
     background-image: var(--bg-mobile-light);
-    background-color: var(---very-light-gray);
+    background-color: var(--very-light-gray);
     background-repeat: no-repeat;
     background-position: top left;
     background-size: contain;
@@ -27,6 +27,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.body--dark-mode{
+    background-image: var(--bg-mobile-dark);
+    background-color: var(--very-dark-gray);
 }
 
 .l-main{
@@ -51,4 +56,17 @@ body{
 
 .line-through{
     text-decoration: line-through;
+}
+
+.theme{
+    background: url("../images/icon-moon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30px;
+    width: 30px;
+    display: block;
+}
+
+.-th-sun{
+    background: url("../images/icon-sun.svg");
 }

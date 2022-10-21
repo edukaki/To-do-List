@@ -31,7 +31,7 @@ window.addEventListener("click",event => {
     })
 
     filter();
-    
+
 })
 
 function getIdFromArr (data){
