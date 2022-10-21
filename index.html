@@ -34,8 +34,14 @@
     <input type="text" placeholder="Create a new to do..." class="c-to-do__text" name="toDoInput">
     <button class="button--bgTransparent" name="btn_add"><i class="fa-thin fa-plus button--plusIcon"></i></button>
   </form>
-  <!-- NEW TO-DO COMPONENT END -->
-<ul data-list="body"></ul>
+    <!-- NEW TO-DO COMPONENT END -->
+    <ul data-list="body">
+      <li class="c-to-do__container c-to-do__container--spaceBetween c-to-do__filter" data-countli>
+        <p data-count></p>
+        <button class="button--bgTransparent c-to-do__filter__text inactive" data-filter="clear">Clear completed</button></>
+      </li>
+    </ul>
+
   <!-- FILTER ELEMENT -->
   <ul class="c-to-do__container c-to-do__container--spaceEvenly c-to-do__filter">
     <li><button class="button--bgTransparent c-to-do__filter__text active" data-filter="all">All</button></li>
