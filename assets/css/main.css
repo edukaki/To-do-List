@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
 body{
 
     /* TIPOGRAPHY */
@@ -52,6 +58,7 @@ input, textarea, button {
 
 .line-through{
     text-decoration: line-through;
+    opacity: .4;
 }
 
 .theme{
@@ -61,4 +68,14 @@ input, textarea, button {
     height: 30px;
     width: 30px;
     display: block;
+}
+
+.footer{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    
+    background-color: var(--list-background-light);
+    padding: .5rem;
 }
