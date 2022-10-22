@@ -45,5 +45,5 @@
     --icon-moon: var(--icon-sun);
     --list-background-light: var(--list-background-dark);
     --shadow-color-light: var(--shadow-color-dark);
-    color: var(--list-fontcolor-dark);
+    --dark-gray: var(--list-fontcolor-dark);
 }

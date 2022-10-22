@@ -29,6 +29,9 @@ body{
     align-items: center;
 }
 
+input, textarea, button {
+    color: var(--dark-gray);
+}
 
 .l-main{
     width: 100vw;
@@ -58,8 +61,4 @@ body{
     height: 30px;
     width: 30px;
     display: block;
-}
-
-.-th-sun{
-    background: url("../images/icon-sun.svg");
 }
