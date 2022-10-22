@@ -10,6 +10,7 @@ body{
     font-family: var(--font-family--main);
     font-weight: var(--font-weight--normal);
     font-size: var(--font-size--main);
+    color: var(--dark-gray);
 
     /* BACKGROUND */
     
@@ -28,6 +29,7 @@ body{
     align-items: center;
 }
 
+
 .l-main{
     width: 100vw;
 }
@@ -42,10 +44,7 @@ body{
 
 .active{
     color: var(--bright-blue);
-}
-
-.inactive{
-    color: var(--dark-gray);
+    transition: .5s;
 }
 
 .line-through{

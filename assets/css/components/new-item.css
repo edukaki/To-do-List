@@ -69,7 +69,6 @@
 }
 
 .button--bgTransparent{
-    display: flex;
     align-items: center;
     height: 25px;
     background-color: transparent;
