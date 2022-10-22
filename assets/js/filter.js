@@ -2,7 +2,7 @@ const btnArr = document.querySelectorAll('[data-filter]');
 const btnAll = document.querySelector('[data-filter="all"]');
 const btnActive = document.querySelector('[data-filter="active"]');
 const btnCompleted = document.querySelector('[data-filter="completed"]');
-const btnClearCompleted = document.querySelector('[data-filter="clear"]');
+const btnClearCompleted = document.querySelectorAll('[data-filter="clear"]');
 
 
 function filter(){
@@ -41,14 +41,16 @@ function filter(){
         })
     })
 
-    btnClearCompleted.addEventListener("click", () => {
-        checkedElement.forEach(checkedElement => {
-            if(checkedElement.checked){
-                checkedElement.parentNode.parentNode.remove();
-            }
+    btnClearCompleted.forEach((element) => {
+        element.addEventListener("click", () => {
+            checkedElement.forEach(checkedElement => {
+                if(checkedElement.checked){
+                    checkedElement.parentNode.parentNode.remove();
+                }
+            })
         })
     })
-} 
+}
 
 
 function hideElement(element){

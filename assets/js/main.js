@@ -58,12 +58,12 @@ function lineThroughItem(checkBox, checkBoxId, element){
 
 export function toDoCount (Arr){
     let countArr = 0;
-    const count = document.querySelector("[data-count]");
+    const count = document.querySelectorAll("[data-count]");
 
     toDoListArr.forEach((element) => {
         if(element.checked == false){
             return countArr++
         }
     })
-    count.innerHTML=`${countArr} items left`
+    count.forEach(element => element.innerHTML=`${countArr} items left`);
 }

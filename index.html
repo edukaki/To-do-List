@@ -36,7 +36,7 @@
   </form>
     <!-- NEW TO-DO COMPONENT END -->
     <ul data-list="body">
-      <li class="c-to-do__container c-to-do__container--spaceBetween c-to-do__filter" data-countli>
+      <li class="c-to-do__container c-to-do__container--spaceBetween c-to-do__filter filter--mobile" data-countli>
         <p data-count></p>
         <button class="button--bgTransparent c-to-do__filter__text inactive" data-filter="clear">Clear completed</button>
       </li>
@@ -44,9 +44,13 @@
 
   <!-- FILTER ELEMENT -->
   <ul class="c-to-do__container c-to-do__container--spaceEvenly c-to-do__filter">
+    <li><p class="filter--desktop" data-count></p></li>
+
     <li><button class="button--bgTransparent c-to-do__filter__text active" data-filter="all">All</button></li>
     <li><button class="button--bgTransparent c-to-do__filter__text" data-filter="active">Active</button></li>
     <li><button class="button--bgTransparent c-to-do__filter__text" data-filter="completed">Completed</button></li>
+
+    <li><button class="filter--desktop button--bgTransparent c-to-do__filter__text inactive" data-filter="clear">Clear completed</button></li>
   </ul>
 
 </main>

@@ -14,6 +14,8 @@
     /* IMAGE */
     --bg-mobile-light: url(../images/bg-mobile-light.jpg);
     --bg-mobile-dark: url(../images/bg-mobile-dark.jpg);
+    --bg-desktop-light: url(../images/bg-desktop-light.jpg);
+    --bg-desktop-dark: url(../images/bg-desktop-dark.jpg);
     --icon-moon: url(../images/icon-moon.svg);
     --icon-sun: url(../images/icon-sun.svg);
     
@@ -40,10 +42,13 @@
 }
 
 .body--dark-mode{
-    --bg-mobile-light: var(--bg-mobile-dark);
-    --very-light-gray: var(--very-dark-gray);
-    --icon-moon: var(--icon-sun);
     --list-background-light: var(--list-background-dark);
-    --shadow-color-light: var(--shadow-color-dark);
     --dark-gray: var(--list-fontcolor-dark);
+    --very-light-gray: var(--very-dark-gray);
+    
+    --shadow-color-light: var(--shadow-color-dark);
+ 
+    --bg-mobile-light: var(--bg-mobile-dark);
+    --bg-desktop-light:var(--bg-desktop-dark);
+    --icon-moon: var(--icon-sun);
 }

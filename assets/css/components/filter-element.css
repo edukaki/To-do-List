@@ -8,3 +8,17 @@
     font-weight: var(--font-weight--strong);
     font-size: 1.2rem;
 }
+
+.filter--desktop{
+    display: none;
+}
+
+@media screen and (min-width:1440px) {
+    .filter--desktop{
+        display: block;
+    }
+
+    .filter--mobile{
+        display: none;
+    }
+}

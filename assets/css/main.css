@@ -61,15 +61,6 @@ input, textarea, button {
     opacity: .4;
 }
 
-.theme{
-    background: var(--icon-moon);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 30px;
-    width: 30px;
-    display: block;
-}
-
 .footer{
     position: absolute;
     width: 100%;
@@ -78,4 +69,17 @@ input, textarea, button {
     
     background-color: var(--list-background-light);
     padding: .5rem;
+}
+
+@media screen and (min-width:910px) {
+    
+    body{
+        background-image: var(--bg-desktop-light);
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .container{
+        width: 40%;
+    }
 }

@@ -9,10 +9,26 @@
     color: var(--font-color-white);
     
     /* SIZE */
-    width: 100vw;
+    width: 100%;
 }
 
 .l-header__title{
     letter-spacing: .5rem;
     text-transform: uppercase;
+}
+
+.theme{
+    display: block;
+    background: var(--icon-moon);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30px;
+    width: 30px;
+    display: block;
+}
+
+@media screen and (min-width:1440px) {
+    .l-header{
+        width: 40%;
+    }
 }
